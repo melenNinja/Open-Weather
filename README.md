@@ -33,7 +33,8 @@ A **simple and functional weather web application** that displays current weathe
 git clone https://github.com/melenNinja/Weather-Web-App.git
 ```
 
-Create a config.json file in the project root with your OpenWeatherMap API key:
+2. **Create a config.json file in the project root with your OpenWeatherMap API key**:
+
 ```bash
 {
     "API_KEY": "Your_API_KEY"
