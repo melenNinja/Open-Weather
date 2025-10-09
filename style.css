@@ -225,6 +225,41 @@ hr{
     }
 }
 
+.langSwitcher{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px;
+    box-shadow: var(--boxshadow);
+    border-radius: 10px;
+    width: max-content;
+    font-size: 1.25rem;
+}
+.dd-content{
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-decoration: none;
+}
+.dd-content a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.langSwitcher:hover .dd-content{
+    display: flex;
+}
+
+.ddb{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .settings{
     position: absolute;
     left: 15px;
