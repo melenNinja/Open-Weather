@@ -1,8 +1,6 @@
-# 🌤️ Weather Web App
+# 🌤️ Open-Weather
 
-A **simple and functional weather web application** that displays current weather data – perfect for practicing **HTML, CSS, and JavaScript**.
-
-> ⚠️ **Disclaimer:** This README is in English, but a full English version of the app interface will be available soon.
+A **simple and functional weather web application** that displays current weather data.
 
 ---
 
@@ -21,7 +19,7 @@ A **simple and functional weather web application** that displays current weathe
 
 - **HTML5** – Structure of the webpage  
 - **CSS3** – Styling and layout  
-- **JavaScript (ES6+)** – Interactive functions and API integration  
+- **JavaScript** – Interactive functions and API integration  
 
 ---
 
