@@ -11,6 +11,7 @@
     --base-alternation: hsl(0, 0%, 80%);
     --text-main: hsl(0, 0%, 15%);
     --text-alternation: hsl(0, 0%, 35%);
+    --boxshadow: inset 0 1px 2px hsl(0,0%,100%), 0 2px 4px hsl(0, 0%, 50%), 0 4px 8px hsl(0, 0%, 70%);
 }
 .darktheme{
     --selected: hsl(0, 0%, 0%);
@@ -18,6 +19,7 @@
     --base-alternation: hsl(0, 0%, 15%);
     --text-main: hsl(0, 0%, 85%);
     --text-alternation: hsl(0, 0%, 65%);
+    --boxshadow: inset 0 1px 2px hsl(0,0%,25%), 0 2px 4px hsl(0, 0%, 10%), 0 4px 8px hsl(0, 0%, 5%);
 }
 
 body{
@@ -38,7 +40,7 @@ body{
 .weatherApp{
     width: max-content;
     height: max-content;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    box-shadow: var(--boxshadow);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -118,7 +120,7 @@ hr{
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    box-shadow: var(--boxshadow);
     flex: 0 0 180px;
 }
 .forcasttemp{
@@ -170,26 +172,13 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width:1000px),(max-height: 830px){
     .weatherApp{
         height: 100%;
         width: 100%;
         min-height: min-content;
+        box-shadow: none;
+        border-radius: 0;
     }
     .forcast{
         max-width: 90%;
@@ -255,6 +244,7 @@ hr{
     margin-top: 15px;
     background-color: var(--base-alternation);
     border-radius: 20px;
+    box-shadow: var(--boxshadow);
 }
 .modebutton{
     padding: 10px 10px 10px 10px;

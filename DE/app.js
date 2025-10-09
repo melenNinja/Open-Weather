@@ -1,6 +1,6 @@
 let api_key = ""
 async function GetAPI() {
-    const api_key_Fetch = await fetch("config.json")
+    const api_key_Fetch = await fetch("../config.json")
     const api_res = await api_key_Fetch.json()
     api_key = api_res.API_KEY
     getWheaterInfo()
@@ -130,19 +130,19 @@ const getforcast = async () => {
     function getLocalIcon(weatherMain) {
         switch (weatherMain) {
             case "Clear":
-                return "img/Sun.png";
+                return "../img/Sun.png";
             case "Clouds":
-                return "img/Cloud.png";
+                return "../img/Cloud.png";
             case "Rain":
-                return "img/Rain.png";
+                return "../img/Rain.png";
             case "Drizzle":
-                return "img/Sun-Cloud-Rain.png";
+                return "../img/Sun-Cloud-Rain.png";
             case "Thunderstorm":
-                return "img/Storm.png";
+                return "../img/Storm.png";
             case "Snow":
-                return "img/Snow.png";
+                return "../img/Snow.png";
             default:
-                return "img/Cloud.png";
+                return "../img/Cloud.png";
         }
     }
 
