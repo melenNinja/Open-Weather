@@ -39,4 +39,4 @@ git clone https://github.com/melenNinja/Weather-Web-App.git
 }
 ```
 
-You can get a free API key from OpenWeatherMap API.
+You can get a free API key from OpenWeatherMap API
